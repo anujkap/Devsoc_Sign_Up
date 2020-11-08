@@ -104,7 +104,7 @@ public class SplashScreen extends AppCompatActivity {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    editor.commit();
+                    editor.apply();
                     Log.d("Commit","Done");
                 }
 

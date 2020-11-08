@@ -110,7 +110,7 @@ public class UserFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         logout.setOnClickListener(v -> {
             mAuth.signOut();
-            Intent i = Objects.requireNonNull(getActivity()).getPackageManager().
+            Intent i = requireActivity().getPackageManager().
                     getLaunchIntentForPackage(getActivity().getPackageName());
             assert i != null;
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

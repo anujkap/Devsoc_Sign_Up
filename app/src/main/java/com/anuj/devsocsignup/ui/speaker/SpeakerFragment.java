@@ -48,7 +48,7 @@ public class SpeakerFragment extends Fragment {
 
         final ImageView qrcode = root.findViewById(R.id.speakers);
 
-        Glide.with(Objects.requireNonNull(getContext())).load(R.drawable.start).into(qrcode);
+        Glide.with(requireContext()).load(R.drawable.start).into(qrcode);
         return root;
     }
 
